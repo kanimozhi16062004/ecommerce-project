@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2025 at 11:33 AM
+-- Generation Time: Mar 21, 2025 at 11:21 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.18
 
@@ -63,11 +63,13 @@ INSERT INTO `customers` (`id`, `name`, `email`, `password`, `created_at`, `updat
 (4, 'ganesh', 'ganesh@gmail.com', '4545454545', '2025-03-12 18:06:35', '2025-03-12 18:06:35'),
 (5, 'kamal', 'kamal@gmail.com', 'kamal123', '2025-03-13 11:31:09', '2025-03-13 11:31:09'),
 (7, 'Kadal selvam', 'kadalselvam6@gmail.com', '12345', '2025-03-14 09:44:12', '2025-03-14 09:44:12'),
-(8, 'ganga', 'ganga@gmail.com', 'ganga123', '2025-03-14 12:37:16', '2025-03-14 12:37:16'),
+(8, 'ganga', 'ganga@gmail.com', '$2b$10$yDoVWZo6xGnZ.3d6GxeuXOwrzLQhTSG8fVCsO.AtE0NheVMsaw/qm', '2025-03-14 12:37:16', '2025-03-20 11:02:45'),
 (9, 'rajesh', 'rajesh@gmail.com', 'rajesh123', '2025-03-15 04:24:43', '2025-03-15 04:24:43'),
 (11, 'suresh', 'suresh@gmail.com', '12345', '2025-03-15 07:13:36', '2025-03-15 07:13:36'),
 (12, 'priya', 'priya@gmail.com', 'priya123', '2025-03-20 08:44:21', '2025-03-20 08:44:21'),
-(20, 'vimal', 'vimal@gmail.com', '$2b$10$1bXRyrkGaOn1cT1VwYgPOeR4QxtYniX1S58iqNZQQeNUAZXO3ghui', '2025-03-20 09:26:12', '2025-03-20 09:26:12');
+(20, 'vimal', 'vimal@gmail.com', '$2b$10$1bXRyrkGaOn1cT1VwYgPOeR4QxtYniX1S58iqNZQQeNUAZXO3ghui', '2025-03-20 09:26:12', '2025-03-20 09:26:12'),
+(22, 'new', 'new@gmail.com', '$2b$10$kP9n0r175t0bOI7hc9Sevu146fBISBpzZ3rDP61S3.6T8U.u/0zNi', '2025-03-20 10:40:44', '2025-03-20 10:40:44'),
+(23, 'bakya', 'bakya@gmail.com', '$2b$10$48hq.xka35DXP4FG66GwDusaJoEuTSP5CMsT361srVOL/DagBNyaG', '2025-03-21 06:58:35', '2025-03-21 06:58:35');
 
 -- --------------------------------------------------------
 
@@ -96,7 +98,8 @@ INSERT INTO `payment_details` (`id`, `order_id`, `total_amount`, `cardholder_nam
 (2, 176271, '19999.00', 'kadal', 'Card', 'Success', 'TXN1741945479546', '2025-03-14 09:44:39', '2025-03-14 09:44:39'),
 (3, 490758, '299.00', 'saravanan', 'Card', 'Success', 'TXN1741956002155', '2025-03-14 12:40:02', '2025-03-14 12:40:02'),
 (4, 668542, '19999.00', 'kishore', 'Card', 'Success', 'TXN1742385241473', '2025-03-19 11:54:01', '2025-03-19 11:54:01'),
-(5, 403521, '299.00', 'vimal', 'Card', 'Success', 'TXN1742462832921', '2025-03-20 09:27:12', '2025-03-20 09:27:12');
+(5, 403521, '299.00', 'vimal', 'Card', 'Success', 'TXN1742462832921', '2025-03-20 09:27:12', '2025-03-20 09:27:12'),
+(6, 33960, '599.00', 'new', 'Card', 'Success', 'TXN1742467266425', '2025-03-20 10:41:06', '2025-03-20 10:41:06');
 
 -- --------------------------------------------------------
 
@@ -127,7 +130,8 @@ INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES
 (20, 'real Me', '22999.00', '/uploads/1741782855066.webp'),
 (21, 'boAt Bassheads', '450.00', '/uploads/1741945409296.jpg'),
 (23, 'realme', '7800.00', '/uploads/1742022712786.webp'),
-(24, 'JBL Flip 5 Wireless', '399.00', '/uploads/1742460940878.webp');
+(24, 'JBL Flip 5 Wireless', '399.00', '/uploads/1742460940878.webp'),
+(25, 'Astigo Remote', '344.00', '/uploads/1742467218288.webp');
 
 --
 -- Indexes for dumped tables
@@ -173,19 +177,19 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `payment_details`
 --
 ALTER TABLE `payment_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
