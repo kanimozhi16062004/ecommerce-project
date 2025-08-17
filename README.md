@@ -38,18 +38,3 @@ This project is organized into **frontend, backend, database, and React modules*
 ```bash
 git clone https://github.com/kanimozhi16062004/ecommerce-project.git
 cd ecommerce-project
-2. Install Dependencies
-npm install
-
-3. Run Backend
-cd ecommerce-backend
-npm start
-
-4. Run Frontend
-cd ecommerce-frontend
-npm start
-
-5. Run React Frontend (Optional)
-cd ecommerce-react
-npm start
-
